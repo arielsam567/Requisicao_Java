@@ -24,7 +24,7 @@ public class Main {
         for (int i=0; i < arrayAgenda.length(); i++) {
             JSONObject f = arrayAgenda.getJSONObject(i);
             Agenda auxAgenda = new Agenda();
-            auxAgenda.setId(f.getString("@id"));
+            auxAgenda.setId(f.getInt("@id"));
             auxAgenda.setNome(f.getString("nome"));
             auxAgenda.setHash(f.getString("@hash"));
             auxAgenda.setEsfera(f.getString("esfera"));
